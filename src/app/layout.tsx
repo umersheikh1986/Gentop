@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import HomeHeader from "./component/HomeHeader";
+import Solidarity from "./component/Solidarity";
+import Registration from "./component/registration";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -25,10 +28,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
+      <body className="bg-[#14000b]">
+        <HomeHeader />
+        {children} <Registration />
       </body>
     </html>
   );
