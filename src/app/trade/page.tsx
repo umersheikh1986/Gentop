@@ -837,10 +837,10 @@ const preSaleABI = [
   },
 ];
 
-const usdtAddress = "0xbE0bB1236d9B265F03f353Ce2a90312a35Baee74"; // Replace with Contract 1 address
-const gentopAddress = "0x56784b00fDFbDeB8A5c042befB7C82a37F9D498F"; // Replace with Contract 2 address
-const stakingContractAddress = "0x76AE7f1B301d2F8bc450B5f31d26b4a0eb67d267"; // Replace with Contract 3 address
-const preSaleContractAddress = "0xa2AD54ac118510bC557374940d4281762Dfd4AAa"; // Replace with Contract 4 address
+const usdtAddress = "0xf7F5214E7a29A9bcc14D55630E97Bd63e0Bc2a2c"; // Replace with Contract 1 address
+const gentopAddress = "0x7eEdA3FaA9F1316c76A8C2ee3479087CF3550F4F"; // Replace with Contract 2 address
+const stakingContractAddress = "0x96A54C5c3B6507dc2CccE7eE6E1fcC053Eb949D3"; // Replace with Contract 3 address
+const preSaleContractAddress = "0x8B554BfCB9dd94981e3Da63bc53d963f6fc2419E"; // Replace with Contract 4 address
 
 const providerOptions = {
   coinbasewallet: {
@@ -957,7 +957,7 @@ export default function Trade() {
       // Optional: Set up polling to fetch balance periodically (e.g., every 10 seconds)
       const balanceInterval = setInterval(() => {
         fetchUsdtBalance(signer, walletAddress);
-      }, 10000); // Fetch balance every 10 seconds
+      }, 100000); // Fetch balance every 10 seconds
 
       // Clean up interval when component unmounts
       return () => clearInterval(balanceInterval);
@@ -1066,15 +1066,9 @@ export default function Trade() {
       // );
 
       // Call the Buy function
-      const tx = await preSaleContract.Buy(
-        amountToBuy,
-        walletAddress,
-        runner
-        //,
-        //{
-        // gasLimit: 10000000,
-        //}
-      );
+      const tx = await preSaleContract.Buy(amountToBuy, walletAddress, runner, {
+        gasLimit: 10000000,
+      });
       console.log(amountToBuy, buyerAddress, runner);
 
       console.log("Transaction: ", tx);
