@@ -258,17 +258,17 @@ function HomeHeader() {
                 </a>
               </li>
               <li>
-                <a href="/about" className="block py-3 px-3 ">
+                <a href="/#" className="block py-3 px-3 ">
                   About
                 </a>
               </li>
               <li>
-                <a href="/" className="block py-3 px-3   ">
+                <a href="/#" className="block py-3 px-3   ">
                   Services
                 </a>
               </li>
               <li>
-                <a href="/" className="block py-3 px-3    ">
+                <a href="/#" className="block py-3 px-3    ">
                   Contact
                 </a>
               </li>
