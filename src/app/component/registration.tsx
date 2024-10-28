@@ -6,7 +6,7 @@ function Registration() {
         <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
           <div className="md:flex md:justify-between">
             <div className="mb-6 md:mb-0 flex flex-col">
-              <a href="https://flowbite.com/" className="flex items-center">
+              <a href="" className="flex items-center">
                 <Image
                   src="/logo1.png"
                   className=" "
@@ -26,7 +26,7 @@ function Registration() {
                 </h2>
                 <ul className="text-white font-medium">
                   <li className="mb-4">
-                    <a href="https://flowbite.com/" className="hover:underline">
+                    <a href="/" className="hover:underline">
                       Flowbite
                     </a>
                   </li>
@@ -47,7 +47,7 @@ function Registration() {
                 <ul className=" text-white font-medium">
                   <li className="mb-4">
                     <a
-                      href="https://github.com/themesberg/flowbite"
+                      href="/"
                       className="hover:underline "
                     >
                       Github
