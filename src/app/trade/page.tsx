@@ -619,16 +619,16 @@ let theme = {
 
 export default function Trade() {
   const [selectedOption, setSelectedOption] = useState("1");
-  const [web3Provider, setWeb3Provider] = useState<Web3Provider | null>(null);
-  const [walletAddress, setWalletAddress] = useState<string | null>(null);
-  const [usdtBalance, setUsdtBalance] = useState<string | null>(null);
+  const [web3Provider, setWeb3Provider] = useState(null);
+  const [walletAddress, setWalletAddress] = useState(null);
+  const [usdtBalance, setUsdtBalance] = useState(null);
   const [usdtAmount, setUsdtAmount] = useState("");
 
-  const [transactionHash, setTransactionHash] = useState<string | null>(null);
-  const [contract1, setContract1] = useState<ethers.Contract | null>(null);
-  const [contract2, setContract2] = useState<ethers.Contract | null>(null);
-  const [contract3, setContract3] = useState<ethers.Contract | null>(null);
-  const [contract4, setContract4] = useState<ethers.Contract | null>(null);
+  const [transactionHash, setTransactionHash] = useState(null);
+  // const [contract1, setContract1] = useState<ethers.Contract | null>(null);
+  // const [contract2, setContract2] = useState<ethers.Contract | null>(null);
+  // const [contract3, setContract3] = useState<ethers.Contract | null>(null);
+  // const [contract4, setContract4] = useState<ethers.Contract | null>(null);
 
   function getSelectedRunner() {
     const runner = parseInt(selectedOption, 10);
