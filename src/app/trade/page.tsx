@@ -622,7 +622,7 @@ export default function Trade() {
     return runner;
   }
 
-  const formatAddress = (address) => {
+  const formatAddress = (address :any) => {
     return `${address.slice(0, 4)}...${address.slice(-4)}`;
   };
 
