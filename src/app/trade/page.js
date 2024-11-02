@@ -198,7 +198,7 @@ async function buyTokens() {
       signer
     );
 
-    const amountToBuy = usdtAmount ; // Assuming USDT has 6 decimals
+    const amountToBuy = const amountToBuy = ethers.utils.parseUnits("100", 18); 
 console.log(amountToBuy)
     const runner = selectedOption; // Replace this with the actual value if needed
     console.log("Runner option selected:", runner);
@@ -206,7 +206,9 @@ console.log(amountToBuy)
    
 
     // Call the Buy function
-    const tx = await preSaleContract.Buy(amountToBuy, walletAddress, runner);
+    const tx = await preSaleContract.Buy(amountToBuy, walletAddress, runner,, {
+            gasLimit: 10000000,
+        });
     console.log("Transaction initiated:", tx);
 
     // Wait for the transaction to be confirmed
