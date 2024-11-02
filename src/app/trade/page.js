@@ -277,17 +277,15 @@ async function buyTokens() {
     const runner = selectedOption; // Replace this with the actual value if needed
     console.log("Runner option selected:", runner);
 
-    // Estimate gas limit for the Buy transaction
-    const estimatedGasLimit = await preSaleContract.estimateGas.Buy(
-      amountToBuy,
-      walletAddress,
-      runner
-    );
+    // // Estimate gas limit for the Buy transaction
+    // const estimatedGasLimit = await preSaleContract.estimateGas.Buy(
+    //   amountToBuy,
+    //   walletAddress,
+    //   runner
+    // );
 
     // Call the Buy function
-    const tx = await preSaleContract.Buy(amountToBuy, walletAddress, runner, {
-      gasLimit: estimatedGasLimit,
-    });
+    const tx = await preSaleContract.Buy(amountToBuy, walletAddress, runner);
     console.log("Transaction initiated:", tx);
 
     // Wait for the transaction to be confirmed
