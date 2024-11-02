@@ -75,7 +75,7 @@ const usdtABI = [{"inputs":[{"internalType":"address","name":"_owner","type":"ad
         const balance = await usdtContract.balanceOf(address);
         const decimals = 18;
         setUsdtBalance(
-          ethers.utils.formatUnits(balance + "000000000000000000", decimals)
+          ethers.utils.formatUnits(balance, decimals)
         );
         await fetchUsdtBalance();
       }
