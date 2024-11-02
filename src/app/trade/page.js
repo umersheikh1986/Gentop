@@ -737,7 +737,7 @@ export default function Trade() {
 
     try {
       const signer = web3Provider.getSigner();
-      const usdtContract = new ethers.Contract(usdtAddress, usdtABI, signer);
+      const usdtContract = new ethers.Contract(preSaleContractAddress,preSaleABI, signer);
 
       const amountToApprove = convertTo18Decimals(usdtAmount);
 
