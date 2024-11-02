@@ -274,7 +274,8 @@ async function buyTokens() {
       signer
     );
 
-    const amountToBuy = ethers.utils.parseUnits(usdtAmount, 6); // Assuming USDT has 6 decimals
+    const amountToBuy = usdtAmount ; // Assuming USDT has 6 decimals
+console.log(amountToBuy)
     const runner = selectedOption; // Replace this with the actual value if needed
     console.log("Runner option selected:", runner);
 
