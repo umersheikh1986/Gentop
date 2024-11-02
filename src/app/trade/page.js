@@ -232,6 +232,7 @@ const usdtABI = [{"inputs":[{"internalType":"address","name":"_owner","type":"ad
 
   //     // Define the values you want to send
   //     const amountToBuy = usdtAmount; // Adjust to the correct amount of USDT
+  console.log(amountToBuy)
   //     const buyerAddress = walletAddress;
   //     const runner = selectedOption; // You can replace this with the actual value if needed
   //     console.log(runner);
@@ -243,7 +244,7 @@ const usdtABI = [{"inputs":[{"internalType":"address","name":"_owner","type":"ad
   //     // );
 
   //     // Call the Buy function
-  //     const tx = await preSaleContract.Buy(amountToBuy, walletAddress, runner, {
+  //     const tx = await preSaleContract.Buy(amountToBuy, buyerAddress, runner, {
   //       gasLimit: 10000000,
   //     });
   //     console.log(amountToBuy, buyerAddress, runner);
