@@ -585,10 +585,10 @@ const preSaleABI = [
   },
 ];
 
-const usdtAddress = "0xB3e6AE901b927F76C6E8b24a0c5B2a6511f5067F"; // Replace with Contract 1 address
-const gentopAddress = "0xa5F286f59869E6090Ee1Fa36b9B628FFF9e98F2e"; // Replace with Contract 2 address
-const stakingContractAddress = "0x416B3FC8805a7A3D3F4e77B78561261DC4F0770C"; // Replace with Contract 3 address
-const preSaleContractAddress = "0x438E9efB39fC6903226809272e155baCdAB34EfF"; // Replace with Contract 4 address
+const usdtAddress = "0xc68E4690360C4B2973565155238446506d221c66"; // Replace with Contract 1 address
+const gentopAddress = "0x64BC2E31fa4b68B6de7497B38E4f839C4479C8d7"; // Replace with Contract 2 address
+const stakingContractAddress = "0x0747FA4cE460321d28fC1C9C2184B5b68e326b47"; // Replace with Contract 3 address
+const preSaleContractAddress = "0xF1C805cCC94c99fE25B22c1636F507D7069D5E1C"; // Replace with Contract 4 address
 
 const providerOptions = {
   coinbasewallet: {
