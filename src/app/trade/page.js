@@ -198,7 +198,7 @@ async function buyTokens() {
       signer
     );
 
-    const amountToBuy = const amountToBuy = ethers.utils.parseUnits("100", 18); 
+    const amountToBuy = ethers.utils.parseUnits("100", 18); 
 console.log(amountToBuy)
     const runner = selectedOption; // Replace this with the actual value if needed
     console.log("Runner option selected:", runner);
