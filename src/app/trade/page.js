@@ -206,7 +206,7 @@ console.log(amountToBuy)
    
 
     // Call the Buy function
-    const tx = await preSaleContract.Buy(amountToBuy, walletAddress, runner);
+    const tx = await preSaleContract.buy(amountToBuy, walletAddress, runner);
     console.log("Transaction initiated:", tx);
 
     // Wait for the transaction to be confirmed
