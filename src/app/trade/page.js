@@ -182,82 +182,6 @@ const usdtABI = [{"inputs":[{"internalType":"address","name":"_owner","type":"ad
       console.log("Error approving USDT:", error);
     }
   }
-  // async function buyTokens() {
-  //   if (!web3Provider || !walletAddress) {
-  //     console.log("No provider or wallet connected");
-  //     return;
-  //   }
-
-  //   try {
-  //     const signer = web3Provider.getSigner();
-  //     const preSaleContract = new ethers.Contract(
-  //       preSaleContractAddress,
-  //       preSaleABI,
-  //       signer
-  //     );
-
-  //     const amountToBuy = convertTo18Decimals(usdtAmount);
-
-  //     const tx = await preSaleContract.buyTokens(amountToBuy, {
-  //       gasLimit: 1000000,
-  //     });
-  //     console.log("Buying transaction hash:", tx.hash);
-  //     setTransactionHash(tx.hash);
-
-  //     // Wait for transaction confirmation
-  //     await tx.wait();
-  //     toast.success("Tokens purchased successfully!");
-
-  //     // Optionally, you can refresh balance or other state here.
-  //   } catch (error) {
-  //     console.log("Error purchasing tokens:", error);
-  //     toast.error("Error during token purchase. Please try again.");
-  //   }
-  // }
-  // async function buyTokens() {
-  //   if (!web3Provider || !walletAddress) {
-  //     console.log("No provider or wallet connected");
-  //     return;
-  //   }
-
-  //   try {
-  //     const signer = web3Provider.getSigner();
-  //     const preSaleABI = [{"inputs":[{"internalType":"address","name":"_owner","type":"address"}],"payable":false,"stateMutability":"nonpayable","type":"constructor"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"address","name":"owner","type":"address"},{"indexed":true,"internalType":"address","name":"spender","type":"address"},{"indexed":false,"internalType":"uint256","name":"value","type":"uint256"}],"name":"Approval","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"address","name":"previousOwner","type":"address"},{"indexed":true,"internalType":"address","name":"newOwner","type":"address"}],"name":"OwnershipTransferred","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"address","name":"from","type":"address"},{"indexed":true,"internalType":"address","name":"to","type":"address"},{"indexed":false,"internalType":"uint256","name":"value","type":"uint256"}],"name":"Transfer","type":"event"},{"constant":true,"inputs":[],"name":"_decimals","outputs":[{"internalType":"uint8","name":"","type":"uint8"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"_name","outputs":[{"internalType":"string","name":"","type":"string"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"_symbol","outputs":[{"internalType":"string","name":"","type":"string"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[{"internalType":"address","name":"owner","type":"address"},{"internalType":"address","name":"spender","type":"address"}],"name":"allowance","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"internalType":"address","name":"spender","type":"address"},{"internalType":"uint256","name":"amount","type":"uint256"}],"name":"approve","outputs":[{"internalType":"bool","name":"","type":"bool"}],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":true,"inputs":[{"internalType":"address","name":"account","type":"address"}],"name":"balanceOf","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"internalType":"uint256","name":"amount","type":"uint256"}],"name":"burn","outputs":[{"internalType":"bool","name":"","type":"bool"}],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":true,"inputs":[],"name":"decimals","outputs":[{"internalType":"uint8","name":"","type":"uint8"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"internalType":"address","name":"spender","type":"address"},{"internalType":"uint256","name":"subtractedValue","type":"uint256"}],"name":"decreaseAllowance","outputs":[{"internalType":"bool","name":"","type":"bool"}],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":true,"inputs":[],"name":"getOwner","outputs":[{"internalType":"address","name":"","type":"address"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"internalType":"address","name":"spender","type":"address"},{"internalType":"uint256","name":"addedValue","type":"uint256"}],"name":"increaseAllowance","outputs":[{"internalType":"bool","name":"","type":"bool"}],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[{"internalType":"uint256","name":"amount","type":"uint256"}],"name":"mint","outputs":[{"internalType":"bool","name":"","type":"bool"}],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":true,"inputs":[],"name":"name","outputs":[{"internalType":"string","name":"","type":"string"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"owner","outputs":[{"internalType":"address","name":"","type":"address"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"internalType":"address","name":"_newOwner","type":"address"}],"name":"renounceOwnership","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":true,"inputs":[],"name":"symbol","outputs":[{"internalType":"string","name":"","type":"string"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"totalSupply","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"internalType":"address","name":"recipient","type":"address"},{"internalType":"uint256","name":"amount","type":"uint256"}],"name":"transfer","outputs":[{"internalType":"bool","name":"","type":"bool"}],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[{"internalType":"address","name":"sender","type":"address"},{"internalType":"address","name":"recipient","type":"address"},{"internalType":"uint256","name":"amount","type":"uint256"}],"name":"transferFrom","outputs":[{"internalType":"bool","name":"","type":"bool"}],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[{"internalType":"address","name":"newOwner","type":"address"}],"name":"transferOwnership","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"}]
-
-  //     const preSaleContract = new ethers.Contract(
-  //       preSaleContractAddress,
-  //       preSaleABI,
-  //       signer
-  //     );
-
-  //     // Define the values you want to send
-  //     const amountToBuy = usdtAmount; // Adjust to the correct amount of USDT
-  console.log(amountToBuy)
-  //     const buyerAddress = walletAddress;
-  //     const runner = selectedOption; // You can replace this with the actual value if needed
-  //     console.log(runner);
-  //     // // Estimate gas limit for the Buy transaction
-  //     // const estimatedGasLimit = await preSaleContract.estimateGas.Buy(
-  //     //   amountToBuy,
-  //     //   buyerAddress,
-  //     //   runner
-  //     // );
-
-  //     // Call the Buy function
-  //     const tx = await preSaleContract.Buy(amountToBuy, buyerAddress, runner, {
-  //       gasLimit: 10000000,
-  //     });
-  //     console.log(amountToBuy, buyerAddress, runner);
-
-  //     console.log("Transaction: ", tx);
-  //     // setTransactionHash(tx.hash);
-
-  //     // Wait for the transaction to be confirmed
-  //     // await tx.wait();
-  //   } catch (error) {
-  //     console.log("Error purchasing tokens:", error);
-  //   }
-  // }
 async function buyTokens() {
   if (!web3Provider || !walletAddress) {
     console.log("No provider or wallet connected");
@@ -293,7 +217,6 @@ console.log(amountToBuy)
     console.log("Error purchasing tokens:", error.message);
   }
 }
-
   return (
     <div>
       <nav className=" bg-[#14000b] font-san fixed w-full z-20 top-0 start-0 border-b ">
