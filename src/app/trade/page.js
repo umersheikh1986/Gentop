@@ -279,12 +279,7 @@ console.log(amountToBuy)
     const runner = selectedOption; // Replace this with the actual value if needed
     console.log("Runner option selected:", runner);
 
-    // // Estimate gas limit for the Buy transaction
-    // const estimatedGasLimit = await preSaleContract.estimateGas.Buy(
-    //   amountToBuy,
-    //   walletAddress,
-    //   runner
-    // );
+   
 
     // Call the Buy function
     const tx = await preSaleContract.Buy(amountToBuy, walletAddress, runner);
