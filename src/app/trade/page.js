@@ -205,9 +205,7 @@ console.log(amountToBuy)
    
 
     // Call the Buy function
-    const tx = await preSaleContract.Buy(amountToBuy, walletAddress, 1, {
-            gasLimit: 10000000,
-        });
+    const tx = await preSaleContract.Buy(amountToBuy, walletAddress, 1);
     console.log("Transaction initiated:", tx);
 
     // Wait for the transaction to be confirmed
