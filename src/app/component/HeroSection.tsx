@@ -37,10 +37,7 @@ function HeroSection() {
           <div className="w-[560px]">
             <hr className=" " />
             <p className="text-center text-white">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Reiciendis, unde. Dicta modi provident facilis perspiciatis
-              tempora quae animi velit explicabo placeat! Cumque suscipit vel
-              autem numquam ea, consectetur laudantium? Dolor.
+           Tokens will not be offered or sold in the United States of America or to U.S. persons and other prohibited persons. See important considerations on page 1 of the White Paper. 
             </p>
           </div>
         </div>

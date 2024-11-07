@@ -11,10 +11,7 @@ function IndividualLevel() {
         <div className="pb-5 grid col-span-2 p-3 border-r-white border-r-2 border-t-white border-t-2 border-b-white border-b-2 rounded-r-[40px]">
           <h1 className="p-2  text-white text-5xl">Join our Community Today</h1>
           <p className=" text-white text-xl">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
-            rerum molestiae veritatis vel nam velit, iste pariatur illo dicta,
-            fuga non magnam illum officiis asperiores. Veritatis vero quam nam
-            nostrum
+          22 months after the launch of our community and after reaching over 14,000 members we begin a new journey, one that is going to take us to a path of exponential growth always looking for sustainability, transparency and capitalization for our members, welcome aboard! 
           </p>
         </div>
       </section>
