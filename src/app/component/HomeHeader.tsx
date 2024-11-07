@@ -272,6 +272,11 @@ function HomeHeader() {
                   Contact
                 </a>
               </li>
+              <li>
+                <a href="/userDashboard" className="block py-3 px-3    ">
+                  User Dashboard
+                </a>
+              </li>
             </ul>
           </div>
         </div>
