@@ -11,7 +11,7 @@ const Solidarity = () => {
       </h2>
       <div className="grid grid-cols-2 mx-auto gap-2 p-8">
         {/* <!-- First Sub Div --> */}
-        <div className=" border-2  border-white rounded-[40px] p-4 text-white">
+        <div className=" border-2 gap-4 border-white rounded-[40px] p-4 text-white">
           {" "}
           <h2 className="p-4">Low Fees & High Profits</h2>
           <p className="p-4">
