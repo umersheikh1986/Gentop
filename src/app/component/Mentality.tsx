@@ -14,11 +14,7 @@ const Mentality = () => {
           <p className="mt-5 font-medium text-xl">
           Since it’s beginning in December 2022 our community has been growing on the basis of transparency, sustainability and decentralization. First we launched the Genios 3x2 and 3x5 gifting matrix system to help our members learn how solidarity capitalization works. Now we are ready to go on to our next phases: 
           </p>
-          <p className="mt-5 font-medium text-xl">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry standard dummy text ever
-            since the 1500s,
-          </p>
+
           <div className="py-2">
             <Image
               src={`/bitcoin.png`}
