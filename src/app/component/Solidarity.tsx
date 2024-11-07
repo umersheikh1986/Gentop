@@ -7,7 +7,7 @@ const Solidarity = () => {
     // </section>
     <div className="">
       <h2 className=" text-center text-3xl p-4 text-white">
-        Why Choose DEFI Tokens
+      WHY CHOOSE GENTOP? 
       </h2>
       <div className="grid grid-cols-2 mx-auto gap-2 p-8">
         {/* <!-- First Sub Div --> */}
