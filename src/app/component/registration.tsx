@@ -16,10 +16,11 @@ function Registration() {
                   height={300}
                   alt="FlowBite Logo"
                 />
-              </Link>
+            
               <p className="self-center text-2xl font-semibold text-white">
-                Tokens
+              Buy Tokens
               </p>
+                  </Link>
             </div>
             <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-4">
               <div>
