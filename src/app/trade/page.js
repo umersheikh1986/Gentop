@@ -208,7 +208,7 @@ async function buyTokens() {
       signer
     );
     
-const amountToBuy =  await usdtContract.allowance(walletAddress, preSaleContractAddress);
+const amountToBuy =  1;
 
 console.log("This is USDT APPROVED",amountToBuy);
     const runner = selectedOption; // Replace this with the actual value if needed
