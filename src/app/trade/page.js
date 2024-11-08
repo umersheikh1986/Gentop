@@ -217,7 +217,7 @@ console.log("This is USDT APPROVED",amountToBuy);
    
 
     // Call the Buy function
-    const tx = await preSaleContract.Buy(amountToBuy, walletAddress, 1);
+    const tx = await preSaleContract.Buy( usdtAmount, walletAddress, 1);
     console.log("Transaction initiated:", tx);
 
     // Wait for the transaction to be confirmed
