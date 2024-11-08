@@ -200,7 +200,9 @@ async function buyTokens() {
       preSaleABI,
       signer
     );
-const amountToBuy = ethers.utils.parseUnits(usdtAmount.toString(), 18);
+     const approvedUSDT = await usdtContract.allowance(walletAddress, preSaleContractAddress);
+    console.log("Approved USDT:", ethers.utils.formatUnits(approvedUSDT, 6));
+const amountToBuy =  approvedUSDT;
 console.log(amountToBuy)
     const runner = selectedOption; // Replace this with the actual value if needed
     console.log("Runner option selected:", runner);
