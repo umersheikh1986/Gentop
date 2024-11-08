@@ -189,7 +189,7 @@ const usdtContract = new ethers.Contract(usdtAddress, usdtABI, signer);
     }
   }
 async function buyTokens() {
-  if (!web3Provider || !walletAddress) {
+  if (!web3Provider || !walletAddress || !usdtAmount) {
     console.log("No provider or wallet connected");
     return;
   }
