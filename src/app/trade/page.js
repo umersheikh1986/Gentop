@@ -208,7 +208,7 @@ async function buyTokens() {
       signer
     );
     
-   const usdtAmountBigInt = ethers.utils.parseUnits(usdtAmount.toString(), 6);
+   const usdtAmountBigInt = ethers.utils.parseUnits(usdtAmount.toString(), 0);
 
 console.log("This is USDT APPROVED",usdtAmountBigInt);
     const runner = selectedOption; // Replace this with the actual value if needed
