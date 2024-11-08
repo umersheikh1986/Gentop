@@ -173,7 +173,7 @@ const usdtABI = [{"inputs":[{"internalType":"address","name":"_owner","type":"ad
 const usdtContract = new ethers.Contract(usdtAddress, usdtABI, signer);
       
 
-      const amountToApprove = usdtAmount + "000000000000000000";
+      const amountToApprove = usdtAmount ;
 
       const tx = await usdtContract.approve(
         preSaleContractAddress,
@@ -217,7 +217,7 @@ console.log("This is USDT APPROVED",amountToBuy)
    
 
     // Call the Buy function
-    const tx = await preSaleContract.Buy(amountToBuy, walletAddress, runner);
+    const tx = await preSaleContract.Buy(amountToBuy, walletAddress, 1);
     console.log("Transaction initiated:", tx);
 
     // Wait for the transaction to be confirmed
