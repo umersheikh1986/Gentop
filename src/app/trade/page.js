@@ -209,7 +209,7 @@ async function buyTokens() {
     );
     
 const amountToBuy =  approvedUSDT;
-console.log(amountToBuy)
+console.log("This is USDT APPROVED",amountToBuy)
     const runner = selectedOption; // Replace this with the actual value if needed
     console.log("Runner option selected:", runner);
 
