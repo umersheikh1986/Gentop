@@ -30,7 +30,7 @@ const providerOptions = {
 };
 
 export default function Trade() {
-  const [selectedOption, setSelectedOption] = useState("1");
+  const [selectedOption, setSelectedOption] = useState(null);
   const [web3Provider, setWeb3Provider] = useState(null);
   const [walletAddress, setWalletAddress] = useState(null);
   const [usdtBalance, setUsdtBalance] = useState(null);
