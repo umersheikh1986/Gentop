@@ -211,7 +211,7 @@ async function buyTokens() {
    
   const amountToApprove =  ethers.utils.parseEther(usdtAmount);
 
-
+  console.log("amountToBuy",amountToApprove)
     const runner = selectedOption; // Replace this with the actual value if needed
     console.log("Runner option selected:", runner);
 
