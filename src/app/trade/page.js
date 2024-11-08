@@ -173,7 +173,7 @@ const usdtABI = [{"inputs":[{"internalType":"address","name":"_owner","type":"ad
 const usdtContract = new ethers.Contract(usdtAddress, usdtABI, signer);
       
 
-      const amountToApprove = ethers.utils.formatUnits(approvedUSDT,18));
+      const amountToApprove = ethers.utils.formatUnits(approvedUSDT,18);
 
       const tx = await usdtContract.approve(
         preSaleContractAddress,
