@@ -200,8 +200,7 @@ async function buyTokens() {
       preSaleABI,
       signer
     );
-
-    const amountToBuy = usdtAmount + "000000000000000000";
+const amountToBuy = ethers.utils.parseUnits(usdtAmount.toString(), 18);
 console.log(amountToBuy)
     const runner = selectedOption; // Replace this with the actual value if needed
     console.log("Runner option selected:", runner);
