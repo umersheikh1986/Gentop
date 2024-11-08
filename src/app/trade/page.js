@@ -208,7 +208,8 @@ async function buyTokens() {
       signer
     );
     
-   const usdtAmountBigInt = ethers.utils.parseUnits(usdtAmount.toString(), 0);
+   
+  const amountToApprove =  ethers.utils.parseEther(usdtAmount);
 
 console.log("This is USDT APPROVED",usdtAmountBigInt);
     const runner = selectedOption; // Replace this with the actual value if needed
@@ -217,7 +218,7 @@ console.log("This is USDT APPROVED",usdtAmountBigInt);
    
 
     // Call the Buy function
-    const tx = await preSaleContract.Buy( usdtAmountBigInt, walletAddress, 1);
+    const tx = await preSaleContract.Buy( amountToApprove, walletAddress, 1);
     console.log("Transaction initiated:", tx);
 
     // Wait for the transaction to be confirmed
