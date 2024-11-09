@@ -35,106 +35,61 @@ const Mentality = () => {
             <ol>
               <hr />
               <li>
-                <p className="font bold text-3xl">2024 Q4</p>
+                <p className="font bold text-3xl">• 2024 Q4</p>
                 <ol>
-                  <li className="font bold text-xl">Staking</li>
-                  <li>DEX Listing</li>
-                  <li>Education Platform</li>
+                  <li className="font bold text-xl">- Staking</li>
+                  <li>- DEX Listing</li>
+                  <li>- Education Platform</li>
                 </ol>
               </li>
               <hr />
               <li>
-                <p className="font bold text-3xl">2025 Q1</p>
+                <p className="font bold text-3xl">• 2025 Q1</p>
                 <ol>
                   <li className="font bold text-xl">
-                    Real Estate Tokenization Platform
+                    - Real Estate Tokenization Platform
                   </li>
-                  <li className="font bold text-xl">DEX Listing</li>
-                  <li className="font bold text-xl">Education Platform</li>
+                  <li className="font bold text-xl">- DEX Listing</li>
+                  <li className="font bold text-xl">- Education Platform</li>
                 </ol>
               </li>
               <hr />
               <li>
-                <p className="font bold text-3xl">2025 Q2</p>
+                <p className="font bold text-3xl">• 2025 Q2</p>
                 <ol>
-                  <li className="font bold text-xl">Business Funding Hub</li>
+                  <li className="font bold text-xl">- Business Funding Hub</li>
                 </ol>
               </li>
               <hr />
               <li>
-                <p className="font bold text-3xl">2025 Q3</p>
+                <p className="font bold text-3xl">• 2025 Q3</p>
                 <ol>
-                  <li className="font bold text-xl">Art Tokenization</li>
+                  <li className="font bold text-xl">- Art Tokenization</li>
                 </ol>
               </li>
               <hr />
               <li>
-                <p className="font bold text-3xl">2025 Q4</p>
+                <p className="font bold text-3xl">• 2025 Q4</p>
                 <ol>
-                  <li className="font bold text-xl">Shop And Earn System</li>
+                  <li className="font bold text-xl">- Shop And Earn System</li>
                 </ol>
               </li>
               <hr />
               <li>
-                <p className="font bold text-3xl">2026 Q2</p>
+                <p className="font bold text-3xl">• 2026 Q2</p>
                 <ol>
-                  <li className="font bold text-xl">Holiday Club</li>
+                  <li className="font bold text-xl">- Holiday Club</li>
                 </ol>
               </li>
               <hr />
               <li>
-                <p className="font bold text-3xl">2026 Q4</p>
+                <p className="font bold text-3xl">• 2026 Q4</p>
                 <ol>
-                  <li className="font bold text-xl">Dream City</li>
+                  <li className="font bold text-xl">- Dream City</li>
                 </ol>
               </li>
             </ol>
           </div>
-          {/* <div className=" p-4 flex flex-col gap-4">
-            <ol className="space-y-2">
-              <li>
-                <p className="font bold text-3xl">2025 Q1</p>
-                <ol>
-                  <li className="font bold text-xl">
-                    Real Estate Tokenization Platform
-                  </li>
-                  <li className="font bold text-xl">DEX Listing</li>
-                  <li className="font bold text-xl">Education Platform</li>
-                </ol>
-              </li>
-              <li>
-                <p className="font bold text-3xl">2025 Q2</p>
-                <ol>
-                  <li className="font bold text-xl">Business Funding Hub</li>
-                </ol>
-              </li>
-              <li>
-                <p className="font bold text-3xl">2025 Q3</p>
-                <ol>
-                  <li className="font bold text-xl">Art Tokenization</li>
-                </ol>
-              </li>
-              <li>
-                <p className="font bold text-3xl">2025 Q4</p>
-                <ol>
-                  <li className="font bold text-xl">Shop And Earn System</li>
-                </ol>
-              </li>
-              <li>
-                <p className="font bold text-3xl">2026 Q2</p>
-                <ol>
-                  <li className="font bold text-xl">Holiday Club</li>
-                </ol>
-              </li>
-              <li>
-                <p className="font bold text-3xl">2026 Q4</p>
-                <ol>
-                  <li className="font bold text-xl">Dream City</li>
-                </ol>
-              </li>
-            </ol>
-          </div> */}
-          {/*  */}
         </div>
       </section>
     </div>
