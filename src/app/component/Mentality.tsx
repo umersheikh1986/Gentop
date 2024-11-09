@@ -8,14 +8,18 @@ const Mentality = () => {
       <div>
         <h1 className="text-6xl mt-6 text-white text-center"> Road Map</h1>
       </div>
-      <section className="grid grid-cols-2 gap-2 p-5 items-center">
+      <section className="grid grid-cols-2 gap-4 p-4 pb-20 pt-12 items-center">
         {/* First Div */}
-        <div className="text-white mx-auto px-6 flex flex-col justify-between ">
-          <p className="mt-5 font-medium text-xl">
-          Since it’s beginning in December 2022 our community has been growing on the basis of transparency, sustainability and decentralization. First we launched the Genios 3x2 and 3x5 gifting matrix system to help our members learn how solidarity capitalization works. Now we are ready to go on to our next phases: 
+        <div className="text-white mx-auto px-6 flex flex-col justify-between h-full">
+          <p className=" font-medium text-xl">
+            Since its beginning in December 2022, our community has been growing
+            on the basis of transparency, sustainability, and decentralization.
+            First, we launched the Genios 3x2 and 3x5 gifting matrix system to
+            help our members learn how solidarity capitalization works. Now we
+            are ready to go on to our next phases:
           </p>
 
-          <div className="py-2">
+          <div className="py-4 flex justify-center">
             <Image
               src={`/bitcoin.png`}
               alt="bitcoin"
@@ -26,46 +30,111 @@ const Mentality = () => {
         </div>
 
         {/* Second Div */}
-        <div className="text-white grid grid-rows-3  ">
-          <div className=" gap-2 flex flex-col p-4 py-10 ">
-            <div className="flex  flex-row gap-2">
-              <RiInstanceLine className="h-8 w-8  text-yellow-600" />{" "}
-              <span className="text-xl">How we Started</span>
-            </div>
-            <div>
-              <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry standard dummy text
-                ever since the 1500s,
-              </p>
-            </div>
+        <div className="text-white flex flex-col gap-4 h-full">
+          <div className="p-4">
+            <ol>
+              <hr />
+              <li>
+                <p className="font bold text-3xl">2024 Q4</p>
+                <ol>
+                  <li className="font bold text-xl">Staking</li>
+                  <li>DEX Listing</li>
+                  <li>Education Platform</li>
+                </ol>
+              </li>
+              <hr />
+              <li>
+                <p className="font bold text-3xl">2025 Q1</p>
+                <ol>
+                  <li className="font bold text-xl">
+                    Real Estate Tokenization Platform
+                  </li>
+                  <li className="font bold text-xl">DEX Listing</li>
+                  <li className="font bold text-xl">Education Platform</li>
+                </ol>
+              </li>
+              <hr />
+              <li>
+                <p className="font bold text-3xl">2025 Q2</p>
+                <ol>
+                  <li className="font bold text-xl">Business Funding Hub</li>
+                </ol>
+              </li>
+              <hr />
+              <li>
+                <p className="font bold text-3xl">2025 Q3</p>
+                <ol>
+                  <li className="font bold text-xl">Art Tokenization</li>
+                </ol>
+              </li>
+              <hr />
+              <li>
+                <p className="font bold text-3xl">2025 Q4</p>
+                <ol>
+                  <li className="font bold text-xl">Shop And Earn System</li>
+                </ol>
+              </li>
+              <hr />
+              <li>
+                <p className="font bold text-3xl">2026 Q2</p>
+                <ol>
+                  <li className="font bold text-xl">Holiday Club</li>
+                </ol>
+              </li>
+              <hr />
+              <li>
+                <p className="font bold text-3xl">2026 Q4</p>
+                <ol>
+                  <li className="font bold text-xl">Dream City</li>
+                </ol>
+              </li>
+            </ol>
           </div>
-          <div className=" gap-2 flex flex-col p-4  py-8  ">
-            <div className="flex  flex-row gap-2">
-              <RiInstanceLine className="h-8 w-8 text-yellow-600" />{" "}
-              <span className="text-xl">Our Mission</span>
-            </div>
-            <div>
-              <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry standard dummy text
-                ever since the 1500s,
-              </p>
-            </div>
-          </div>
-          <div className=" gap-2 flex flex-col p-4  py-8  ">
-            <div className="flex  flex-row gap-2">
-              <RiInstanceLine className="h-8 w-8 text-yellow-600" />{" "}
-              <span className="text-xl">Our Plans</span>
-            </div>
-            <div>
-              <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry standard dummy text
-                ever since the 1500s,
-              </p>
-            </div>
-          </div>
+          {/* <div className=" p-4 flex flex-col gap-4">
+            <ol className="space-y-2">
+              <li>
+                <p className="font bold text-3xl">2025 Q1</p>
+                <ol>
+                  <li className="font bold text-xl">
+                    Real Estate Tokenization Platform
+                  </li>
+                  <li className="font bold text-xl">DEX Listing</li>
+                  <li className="font bold text-xl">Education Platform</li>
+                </ol>
+              </li>
+              <li>
+                <p className="font bold text-3xl">2025 Q2</p>
+                <ol>
+                  <li className="font bold text-xl">Business Funding Hub</li>
+                </ol>
+              </li>
+              <li>
+                <p className="font bold text-3xl">2025 Q3</p>
+                <ol>
+                  <li className="font bold text-xl">Art Tokenization</li>
+                </ol>
+              </li>
+              <li>
+                <p className="font bold text-3xl">2025 Q4</p>
+                <ol>
+                  <li className="font bold text-xl">Shop And Earn System</li>
+                </ol>
+              </li>
+              <li>
+                <p className="font bold text-3xl">2026 Q2</p>
+                <ol>
+                  <li className="font bold text-xl">Holiday Club</li>
+                </ol>
+              </li>
+              <li>
+                <p className="font bold text-3xl">2026 Q4</p>
+                <ol>
+                  <li className="font bold text-xl">Dream City</li>
+                </ol>
+              </li>
+            </ol>
+          </div> */}
+          {/*  */}
         </div>
       </section>
     </div>
